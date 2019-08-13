@@ -31,6 +31,12 @@ public class App {
 			
 			session.getTransaction().commit();
 			
+			// HQL Operation
+			/*
+			session.beginTransaction();
+			session.createQuery("update users set password = 'hellopass' where first_name = 'farhad'").executeUpdate();
+			session.getTransaction().commit();
+			*/
 			
 			/****** Delete Operation
 			// Create object of entity class type
